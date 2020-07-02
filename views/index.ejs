@@ -1,0 +1,58 @@
+<html ng-app="simplePage">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WebSocket</title>
+		<!--
+        CSS
+        <link href="/../css/bootstrap.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <link href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet">
+
+        <link href="/bower_components/angular-toastr/dist/angular-toastr.min.css" rel="stylesheet">
+
+        <link href="/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script> -->
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">WebSocket</a>
+      </nav>
+    <div ng-view>
+    </div>
+</body>
+
+        <!--  Scripts
+        <script type="text/javascript" src="/public/js/jquery-2.1.1.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+        <!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+        <!-- <script type="text/javascript" src="/bower_components/angular-socket-io/socket.js"></script> -->
+
+        <script type="text/javascript" src="/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+
+        <script type="text/javascript" src="/public/js/app.js"></script>
+        <script type="text/javascript" src="/public/js/controller-index.js"></script>
+        <script type="text/javascript" src="/public/js/controller-cars.js"></script>
+        <script type="text/javascript" src="/public/js/controller-foods.js"></script>
+
+</html>
+
+<!-- 
+https://github.com/hmschreiner/node-websockets
+https://socket.io/get-started/chat/
+https://www.html5rocks.com/en/tutorials/frameworks/angular-websockets/
+https://github.com/wilk/ng-websocket 
+-->

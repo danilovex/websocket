@@ -1,0 +1,54 @@
+<div ng-controller="CarsCtrl">
+
+    <div class="container">
+
+        <h3>Cars</h3>
+        <div class="alert alert-warning" role="alert" ng-show="invalidInput">
+            Must enter name of car and select company!
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <form class="form">
+                    <div class="form-group">
+                        <label>Select Company of Car</label>
+                        <select class="form-control" ng-model="form.company">
+                            <option ng-repeat="item in companies" ng-value="item">{{item}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Car</label>
+                        <input type="text" class="form-control" id="car" ng-model="form.car">
+                    </div>
+
+                    <button type="button" class="btn btn-primary" ng-click="add()">Register</button>
+
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="row" class="online-users">
+                    <div class="col-12">:: Online Users {{usersOnline.length}}::</div>
+                    <div class="col-12 online">
+                        <span ng-repeat="item in usersOnline">{{item.nickname}}</span>
+                    </div>
+                </div>
+                <p class="text-center img-subpage">
+                    <img src="/images/car.svg" width="200px" alt="List Car">
+                </p>
+            </div>
+        </div>
+
+        <h5>List All Cars by Company</h5>
+        <div class="row">
+            <div class="col-sm" ng-repeat="company in companies">
+                <h7>{{company}}</h7>
+                <ul>
+                    <li ng-repeat="item in cars | filter: company">
+                        {{item.car}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>

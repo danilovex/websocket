@@ -1,0 +1,27 @@
+body {
+    background-color: whitesmoke;
+}
+.index {
+    margin-top: 150px;
+}
+.container{
+    margin-top: 20px;
+}
+.online-users{
+    color:#444053;
+    font-size: 10px;
+}
+.online{
+    margin-top: 5px;
+}
+.online span{
+    background-color: #444053;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+}
+.img-subpage{
+    margin-top: 20px;
+}
